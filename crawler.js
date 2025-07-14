@@ -13,7 +13,6 @@ const fs = require("fs");
   await inputs.nth(0).waitFor();
   await inputs.nth(0).fill("adidas");
 
-  // Designation country alanına insan gibi "Türkiye" yaz
   const countryInput = inputs.nth(4);
   await countryInput.click();
   await countryInput.type("Germany", { delay: 150 }); // insan gibi
