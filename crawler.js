@@ -8,7 +8,7 @@ const fs = require("fs");
 
   await page.goto("https://branddb.wipo.int", { waitUntil: "load" });
 
-  // Brand name yaz
+  // Write brand name
   const inputs = page.locator("input.b-input__input");
   await inputs.nth(0).waitFor();
   await inputs.nth(0).fill("adidas");
